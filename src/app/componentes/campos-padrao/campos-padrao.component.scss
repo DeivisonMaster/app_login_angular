@@ -1,0 +1,38 @@
+@import '../../../estilos/variaveis.scss';
+
+.campos-input{
+    font-size: 16px;
+    color: $cor-texto;
+    text-align: start;
+
+    label {
+        margin-bottom: 10px;
+    }
+
+    .campos-input-conteudo{
+        width: 100%;
+        border-radius: 8px;
+        display: flex;
+
+        .input-icone{
+            padding: 12px;
+            background-color: $cor-primaria;
+            border-radius: 0 8px 8px 0;
+
+            img{
+                height: 20px;
+            }
+        }
+
+        input {
+            border: none;
+            border-radius: 8px 0 0 8px;
+            background-color: $bg-cinza-secundaria;
+            padding: 12px 0 12px 20px;
+            width: 100%;
+        }
+    }
+}
+
+
+

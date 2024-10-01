@@ -1,0 +1,15 @@
+<div class="campos-input">
+    <label [for]="varInputNome">{{ varLabel }}</label>
+
+    <div class="campos-input-conteudo">
+        <input 
+            [type]="varTipo" 
+            [value]="valor" 
+            [placeholder]="varPlaceholder"
+            (input)="onInput($event)"/>
+
+        <div class="input-icone">
+            <ng-content></ng-content>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,35 @@
+<app-layout-padrao
+    titulo="Faça o login com sua conta"
+    textoBtnPrimario="Logar agora"
+    textoBtnSecundario="Se inscreva agora"
+    (submit)="login()"
+    (navegar)="navegar()"
+    [desabilitaBtnPrimario]="!loginForm.valid">
+
+    <form [formGroup]="loginForm">
+        <app-campos-padrao
+            formControlName="email"
+            varInputNome="email"
+            varTipo="email" 
+            varPlaceholder="email@email.com"
+            varLabel="Email"
+        >
+
+            <img src="/assets/imagens/email-icon.svg">
+        </app-campos-padrao>
+
+        <app-campos-padrao
+            formControlName="senha"
+            varInputNome="senha" 
+            varTipo="password"
+            varLabel="Senha"
+            varPlaceholder="sua senha"
+        >
+
+            <img src="/assets/imagens/password-icon.svg">
+        </app-campos-padrao>
+
+        <span>Esqueceu sua senha?</span>
+    </form>
+
+</app-layout-padrao>
