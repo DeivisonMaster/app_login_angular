@@ -1,0 +1,45 @@
+<app-layout-padrao
+    titulo="Cadastre-se e comece hoje!"
+    textoBtnPrimario="Cadastre-se"
+    textoBtnSecundario="Logar"
+    (eventoSubmit)="registrar()"
+    (eventoNavegar)="login()"
+    [desabilitaBtnPrimario]="!registroForm.valid">
+
+    <form [formGroup]="registroForm">
+        <app-campos-padrao
+            formControlName="nome"
+            varTipo="text"
+            varLabel="Nome"
+            varPlaceholder="nome"
+        >
+            <img src="/assets/imagens/email-icon.svg">
+        </app-campos-padrao>
+
+        <app-campos-padrao
+            formControlName="email"
+            varTipo="email"
+            varLabel="Email"
+            varPlaceholder="email@email.com"
+        >
+            <img src="/assets/imagens/email-icon.svg">
+        </app-campos-padrao>
+
+        <app-campos-padrao
+            formControlName="senha"
+            varTipo="password"
+            varLabel="Senha"
+            varPlaceholder="informe sua senha"
+        >
+        <img src="/assets/imagens/password-icon.svg">
+        </app-campos-padrao>
+
+        <app-campos-padrao
+            formControlName="confirmaSenha"
+            varTipo="password"
+            varPlaceholder="repita sua senha"
+        >
+        <img src="/assets/imagens/password-icon.svg">
+        </app-campos-padrao>
+    </form>
+</app-layout-padrao>

@@ -11,8 +11,8 @@ export class LayoutPadraoComponent {
   @Input() textoBtnSecundario: string = '';
   @Input() desabilitaBtnPrimario: boolean = true;
 
-  @Output("submit") onSubmit = new EventEmitter()
-  @Output("navegar") onNavegar = new EventEmitter()
+  @Output("eventoSubmit") onSubmit = new EventEmitter()
+  @Output("eventoNavegar") onNavegar = new EventEmitter()
 
   enviar(): void{
     this.onSubmit.emit()

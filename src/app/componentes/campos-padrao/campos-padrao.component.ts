@@ -8,7 +8,7 @@ type TiposCampo = 'text' | 'email' | 'password'
   templateUrl: './campos-padrao.component.html',
   styleUrls: ['./campos-padrao.component.scss'],
   providers: [
-    {
+    { /** resolvendo problema de atributos formControlName não serem reconhecidos pelo browser */
       provide: NG_VALUE_ACCESSOR,
       useExisting: forwardRef(() => CamposPadraoComponent),
       multi: true

@@ -37,6 +37,6 @@ export class LoginComponent {
   }
 
   navegar(): void{
-    this.rota.navigate(['registrar'])
+    this.rota.navigate(['registro'])
   }
 }

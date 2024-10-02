@@ -11,6 +11,7 @@ import { CamposPadraoComponent } from './componentes/campos-padrao/campos-padrao
 import { ToastrModule } from 'ngx-toastr';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SistemaComponent } from './paginas/sistema/sistema.component';
+import { RegistroComponent } from './paginas/registro/registro.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { SistemaComponent } from './paginas/sistema/sistema.component';
     LayoutPadraoComponent,
     LoginComponent,
     CamposPadraoComponent,
-    SistemaComponent
+    SistemaComponent,
+    RegistroComponent
   ],
   imports: [
     BrowserModule,

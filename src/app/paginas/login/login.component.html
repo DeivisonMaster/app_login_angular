@@ -2,8 +2,8 @@
     titulo="Faça o login com sua conta"
     textoBtnPrimario="Logar agora"
     textoBtnSecundario="Se inscreva agora"
-    (submit)="login()"
-    (navegar)="navegar()"
+    (eventoSubmit)="login()"
+    (eventoNavegar)="navegar()"
     [desabilitaBtnPrimario]="!loginForm.valid">
 
     <form [formGroup]="loginForm">
